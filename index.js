@@ -8,7 +8,8 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const mfavicon=require("express-favicon");
 const mongoStore = require('connect-mongo')(session);
-
+var mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 const app = express();
 
 const config= require('./config/config');
@@ -32,9 +33,9 @@ app.use(session({
     //ephemeral: true
     store: new mongoStore({
         url: config.mongoUrl,
-        //ttl: 14 * 24 * 60 * 60,//14 days 
-        ttl: config.defaultSessionDuration,// 2 hours 
-        //mongoOptions: advancedOptions // See below for details 
+        //ttl: 14 * 24 * 60 * 60,//14 days
+        ttl: config.defaultSessionDuration,// 2 hours
+        //mongoOptions: advancedOptions // See below for details
     })
 }));
 module.exports=app;
@@ -93,4 +94,3 @@ module.exports = app;
 app.listen(1234,function(){
     console.log("Server listening at port 1234..");
 })
-

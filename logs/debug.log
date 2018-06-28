@@ -1,0 +1,60 @@
+[2018-06-28T22:39:37.181] [DEBUG] debug - routes index webindex
+[2018-06-28T22:44:26.110] [DEBUG] debug - routes common checkUsername
+[2018-06-28T22:44:26.110] [DEBUG] debug - crud common checkUsername
+[2018-06-28T22:44:26.539] [DEBUG] debug - crud result
+[2018-06-28T22:44:37.847] [DEBUG] debug - routes signup signup
+[2018-06-28T22:44:37.848] [DEBUG] debug - validate email
+[2018-06-28T22:44:37.849] [DEBUG] debug - validate username
+[2018-06-28T22:44:37.849] [DEBUG] debug - validate password
+[2018-06-28T22:44:37.850] [DEBUG] debug - validate string
+[2018-06-28T22:44:37.850] [DEBUG] debug - crud signup checkUser
+[2018-06-28T22:44:38.169] [DEBUG] debug - crud result
+[2018-06-28T22:44:38.169] [DEBUG] debug - crud common checkUsername
+[2018-06-28T22:44:38.719] [DEBUG] debug - crud result
+[2018-06-28T22:44:38.720] [DEBUG] debug - crud signup addUser
+[2018-06-28T22:44:38.723] [DEBUG] debug - config encrypt genRandomString
+[2018-06-28T22:44:38.724] [DEBUG] debug - config encrypt sha512
+[2018-06-28T22:44:38.724] [DEBUG] debug - config utils randomStringGenerate
+[2018-06-28T22:44:39.356] [DEBUG] debug - crud result{ __v: 0,
+  useremail: 'mayank@gmail.com',
+  username: 'mayank',
+  password1: '6860c73e505a57898717fa9e452155a8382c40b6c9a6b1cf49d202e007d8fee88f8352ff977c12c528367d387f64e531df06b6bda29156654e237bade71addb9',
+  role: 'customer',
+  salt: 'caa38b5d09b5102c',
+  userid: '17yOUDvmqKEE7skjSxrkaxFYJi4M2rV5',
+  registrationdate: 2018-06-28T17:14:38.740Z,
+  emailverified: false,
+  _id: 5b35177ea439d5276c8e634b,
+  social: [] }
+[2018-06-28T22:44:39.357] [DEBUG] debug - crud common sendLink
+[2018-06-28T22:44:39.359] [DEBUG] debug - config utils randomStringGenerate
+[2018-06-28T22:44:39.363] [DEBUG] debug - config utils fillSession
+[2018-06-28T22:44:39.365] [DEBUG] debug - config utils fillWebSession
+[2018-06-28T22:44:39.870] [DEBUG] debug - crud result[object Object]
+[2018-06-28T22:44:39.871] [DEBUG] debug - utils create mail verificationlink { type: 'verificationlink',
+  email: 'mayank@gmail.com',
+  url: 'http://localhost:1234/#/emailactivate?e=mayank@gmail.com&t=DBhmdtRMzmmWmFtFLuIJbcRywu3eKIjr' }
+[2018-06-28T22:44:39.874] [DEBUG] debug - config utils sendMail
+[2018-06-28T22:44:40.771] [ERROR] debug - { Error: self signed certificate in certificate chain
+    at TLSSocket.<anonymous> (_tls_wrap.js:1105:38)
+    at emitNone (events.js:106:13)
+    at TLSSocket.emit (events.js:208:7)
+    at TLSSocket._finishInit (_tls_wrap.js:639:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:469:38) code: 'ECONNECTION', command: 'CONN' }
+[2018-06-28T22:44:40.779] [ERROR] debug - error sending mail
+[2018-06-28T22:44:41.782] [DEBUG] debug - routes index webindex
+[2018-06-28T22:44:41.783] [DEBUG] debug - crud index checkSession
+[2018-06-28T22:44:42.234] [DEBUG] debug - crud result{ _id: 5b35177ea439d5276c8e634b,
+  useremail: 'mayank@gmail.com',
+  username: 'mayank',
+  password1: '6860c73e505a57898717fa9e452155a8382c40b6c9a6b1cf49d202e007d8fee88f8352ff977c12c528367d387f64e531df06b6bda29156654e237bade71addb9',
+  role: 'customer',
+  salt: 'caa38b5d09b5102c',
+  userid: '17yOUDvmqKEE7skjSxrkaxFYJi4M2rV5',
+  registrationdate: 2018-06-28T17:14:38.740Z,
+  emailverified: false,
+  __v: 0,
+  emailactivationtoken: 'DBhmdtRMzmmWmFtFLuIJbcRywu3eKIjr',
+  social: [] }
+[2018-06-28T22:44:42.235] [DEBUG] debug - config utils fillSession
+[2018-06-28T22:44:42.236] [DEBUG] debug - config utils fillWebSession

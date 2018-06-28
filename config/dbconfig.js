@@ -1,6 +1,6 @@
 'use strict';
 
-const url=require("./config") 
+const url=require("./config")
 
 const dbconfig={
     dburl:url.dbUrl

@@ -1,12 +1,12 @@
 'use strict';
 
 const secrets={
-    dbUrl:"mongodb://localhost:27017/webskeleton",
+    dbUrl:"mongodb://DishLive:DishLive2018@ds115931.mlab.com:15931/dishlive",
     dbCollection:"users",
     sessionCollection:"appsessions",
     sessionKey:["ggggg","aaaaa","sssssss","hhhhh","ffff","kkkkkk","ttt","aaaa"],
     reqUrl:"http://localhost:1234",
-    mongoUrl:'mongodb://localhost:27017/webskeleton',
+    mongoUrl:'mongodb://DishLive:DishLive2018@ds115931.mlab.com:15931/dishlive',
     defaultSessionDuration:2*60*60,
     SMTPS_EMAIL:"surveyshimanshu@gmail.com",
     SMTPS_PASSWORD:"surveys9990",
